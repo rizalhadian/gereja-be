@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sacraments",
+      "handler": "sacraments.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sacraments/count",
+      "handler": "sacraments.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sacraments/:id",
+      "handler": "sacraments.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sacraments",
+      "handler": "sacraments.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sacraments/:id",
+      "handler": "sacraments.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sacraments/:id",
+      "handler": "sacraments.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sacraments",
+  "info": {
+    "name": "Sacraments"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "family_member": {
+      "model": "family-member"
+    },
+    "nama_sakramen": {
+      "type": "enumeration",
+      "enum": [
+        "Baptis",
+        "Ekaristi",
+        "Krisma",
+        "Perkawinan",
+        "Imamat",
+        "Pengakuan_Dosa",
+        "Pengurapan_Sakit"
+      ]
+    },
+    "date": {
+      "type": "date"
+    },
+    "valid_sakramen": {
+      "type": "boolean"
+    }
+  }
+}

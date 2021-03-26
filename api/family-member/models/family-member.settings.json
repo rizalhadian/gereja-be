@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "family_members",
+  "info": {
+    "name": "Family Member",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "family": {
+      "via": "family_members",
+      "model": "keluarga"
+    },
+    "nama": {
+      "type": "string"
+    },
+    "uid": {
+      "type": "uid"
+    },
+    "on_sheet_no_warga": {
+      "type": "string"
+    },
+    "import_log": {
+      "model": "import-log"
+    },
+    "group": {
+      "model": "group"
+    },
+    "nama_panggilan": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "M",
+        "F"
+      ]
+    },
+    "marital_status": {
+      "type": "enumeration",
+      "enum": [
+        "married",
+        "not_married"
+      ]
+    },
+    "relasi_family": {
+      "type": "string"
+    },
+    "golongan_darah": {
+      "type": "string"
+    },
+    "agama": {
+      "type": "string"
+    },
+    "pendidikan": {
+      "type": "string"
+    },
+    "dob": {
+      "type": "date"
+    },
+    "on_sheet_dob": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "registeration": {
+      "type": "date"
+    },
+    "on_sheet_registeration": {
+      "type": "string"
+    }
+  }
+}

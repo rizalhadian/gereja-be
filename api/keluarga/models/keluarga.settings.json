@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "keluargas",
+  "info": {
+    "name": "Family",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "uid": {
+      "type": "uid"
+    },
+    "nama": {
+      "type": "string"
+    },
+    "nama_panggilan": {
+      "type": "string"
+    },
+    "alamat_1": {
+      "type": "text"
+    },
+    "alamat_2": {
+      "type": "text"
+    },
+    "kode_pos": {
+      "type": "string"
+    },
+    "telepon": {
+      "type": "string"
+    },
+    "register_date": {
+      "type": "date"
+    },
+    "import_log": {
+      "model": "import-log"
+    },
+    "group": {
+      "model": "group"
+    },
+    "family_members": {
+      "collection": "family-member",
+      "via": "family"
+    },
+    "on_sheet_no_kk": {
+      "type": "string"
+    }
+  }
+}

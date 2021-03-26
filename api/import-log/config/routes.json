@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/import-logs",
+      "handler": "import-log.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/import-logs/count",
+      "handler": "import-log.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/import-logs/:id",
+      "handler": "import-log.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/import-logs",
+      "handler": "import-log.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/import-logs/:id",
+      "handler": "import-log.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/import-logs/:id",
+      "handler": "import-log.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

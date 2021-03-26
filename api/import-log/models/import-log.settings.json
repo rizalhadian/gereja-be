@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "import_logs",
+  "info": {
+    "name": "import_log",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "admin_user": {
+      "plugin": "admin",
+      "model": "user"
+    },
+    "file_name": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "groups",
+  "info": {
+    "name": "Group",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "email": {
+      "type": "email"
+    },
+    "group_category": {
+      "model": "group-category"
+    },
+    "parent": {
+      "model": "group"
+    },
+    "on_sheet_name": {
+      "type": "string"
+    },
+    "on_sheet_id": {
+      "type": "string"
+    },
+    "import_log": {
+      "model": "import-log"
+    },
+    "uid": {
+      "type": "uid"
+    }
+  }
+}
