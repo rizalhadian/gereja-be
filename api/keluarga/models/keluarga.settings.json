@@ -42,11 +42,20 @@
       "model": "group"
     },
     "family_members": {
-      "collection": "family-member",
-      "via": "family"
+      "via": "family",
+      "collection": "family-member"
     },
     "on_sheet_no_kk": {
       "type": "string"
+    },
+    "is_sudah_cek_kk": {
+      "type": "boolean"
+    },
+    "is_update_anggota_uid": {
+      "type": "boolean"
+    },
+    "is_update_uid_typo": {
+      "type": "boolean"
     }
   }
 }

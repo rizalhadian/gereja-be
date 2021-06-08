@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/status-pendidikans",
+      "handler": "status-pendidikan.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/status-pendidikans/count",
+      "handler": "status-pendidikan.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/status-pendidikans/:id",
+      "handler": "status-pendidikan.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/status-pendidikans",
+      "handler": "status-pendidikan.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/status-pendidikans/:id",
+      "handler": "status-pendidikan.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/status-pendidikans/:id",
+      "handler": "status-pendidikan.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

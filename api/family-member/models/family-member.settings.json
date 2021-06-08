@@ -43,8 +43,9 @@
     "marital_status": {
       "type": "enumeration",
       "enum": [
-        "married",
-        "not_married"
+        "lajang",
+        "menikah",
+        "cerai"
       ]
     },
     "relasi_family": {
@@ -76,6 +77,21 @@
     },
     "on_sheet_registeration": {
       "type": "string"
+    },
+    "is_sudah_cek_group": {
+      "type": "boolean"
+    },
+    "is_update_uid_typo": {
+      "type": "boolean"
+    },
+    "status_keluarga": {
+      "model": "status-keluarga"
+    },
+    "is_status_keluarga_update": {
+      "type": "boolean"
+    },
+    "status_pendidikan": {
+      "model": "status-pendidikan"
     }
   }
 }

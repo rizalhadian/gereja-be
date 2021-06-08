@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/status-keluargas",
+      "handler": "status-keluarga.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/status-keluargas/count",
+      "handler": "status-keluarga.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/status-keluargas/:id",
+      "handler": "status-keluarga.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/status-keluargas",
+      "handler": "status-keluarga.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/status-keluargas/:id",
+      "handler": "status-keluarga.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/status-keluargas/:id",
+      "handler": "status-keluarga.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

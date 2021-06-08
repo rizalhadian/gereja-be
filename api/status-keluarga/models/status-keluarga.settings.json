@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "status_keluargas",
+  "info": {
+    "name": "Status Keluarga"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "kode": {
+      "type": "string"
+    },
+    "sort_weight": {
+      "type": "integer"
+    }
+  }
+}

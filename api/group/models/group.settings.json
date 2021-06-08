@@ -37,6 +37,15 @@
     },
     "uid": {
       "type": "uid"
+    },
+    "ancestors": {
+      "collection": "group",
+      "via": "descendants",
+      "dominant": true
+    },
+    "descendants": {
+      "collection": "group",
+      "via": "ancestors"
     }
   }
 }
